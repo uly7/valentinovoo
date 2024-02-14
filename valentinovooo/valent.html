@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="valent" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./yesh.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Timi.</strong>
+                        <p>
+                            Ja kot vids ni nc za prakso ane ampk sm dobila pac idejo da ti mau 
+                            presenecenje nardim. Kr si tolk velik zapravu zame ta vikend sm ti 
+                            zelela pac se neki naredit. Srecno valentinovo ti zelim ane skoda da ga ne
+                            morva lih skp prezivet ampak sej je se velik cajta pred nama. Res mi ful
+                            pomen use kar si zame naredu ta vikend tko da sm se odlocla da si mau cajta
+                            na tem uzamem in ti na zanimiu nacin voscm. Happy Valentines!
+                            Res te mam najrajs in vedn te bom mela. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
